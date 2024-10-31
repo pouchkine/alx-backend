@@ -9,7 +9,7 @@ class BasicCache(BaseCaching):
     """
     return BasicCache
     """
-    def put(self, key, item):
+    def put(self, key=None, item=None):
         """
         put function
         """
@@ -18,7 +18,7 @@ class BasicCache(BaseCaching):
         else:
             self.cache_data[key] = item
 
-    def get(self, key):
+    def get(self, key=None):
         """
         get function
         """
